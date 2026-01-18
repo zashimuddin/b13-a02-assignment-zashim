@@ -1,3 +1,52 @@
-*{
-    background-color: teal;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+/* common styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.btn-gradient {
+    border-radius: 10000px;
+    border: none;
+    padding: 0.78125rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    /* background-color: #469165; */
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    color: white;
+    max-width: max-content;
+} 
+
+
+/* header styling */
+header{
+    background-color: rgba(35, 14, 61, 1);
+    background-image: linear-gradient(rgba(247, 233, 63, 1) 100%, rgba(251, 9, 180, 1) 100%, rgba(145, 0, 248, 1) 100%));
+}
+/* Nav bar styling */
+nav{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+nav .menu{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.logo{
+    width: 14rem;
+    height: 2rem;
+}
+nav .menu a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
 }
