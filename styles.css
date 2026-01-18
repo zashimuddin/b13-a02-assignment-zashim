@@ -33,7 +33,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 2%;
 }
 nav .menu{
     display: flex;
@@ -49,4 +49,23 @@ nav .menu a {
     font-weight: 500;
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
+}
+#hamburger-menu{
+    display: none;
+}
+
+/* Making responsive for Devices */
+
+@media screen and (max-width:576px){
+    #menu-item{
+        display: none;
+    }
+    #btn-nav{
+        display: none;
+    }
+    #hamburger-menu{
+        display: block;
+        cursor: pointer;
+    }
+
 }
