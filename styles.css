@@ -130,6 +130,53 @@ nav .menu a {
     display: flex;
     gap: 10px;
 }
+.about-parent{
+    background: rgba(26, 11, 46, 1);;
+}
+.about-child{
+    border: 2px solid red;
+    color: white;
+    text-align: center;
+    padding: 50px 120px 80px;
+}
+.about-child h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.62rem,;
+    padding-bottom: 1rem;
+}
+.about-child p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    padding-bottom: 5rem;
+}
+.about-child hr{
+    margin-bottom: 5rem;
+    border: 0.25px solid rgba(9, 26, 71, 0.932);
+}
+.numbers-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    row-gap: 1rem;
+    column-gap: 5rem;
+}
+.numbers{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3.625rem;
+    color: #00FF88;
+}
+.numbers-text{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: white;
+}
+
+
+
 
 /* Making responsive for Devices */
 
@@ -145,9 +192,43 @@ nav .menu a {
         cursor: pointer;
     }
     .box p{
-    padding: 0 20px ;
+        padding: 0 20px ;
+    }
+    .about-child{
+        border: 2px solid red;
+        color: white;
+        text-align: center;
+        padding: 40px 19px;
+    }
+    .about-child h2{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.4375rem,;
+        padding-bottom: 1rem;
+    }
+    .about-child p{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        padding-bottom: 5rem;
     }
 
+    .numbers-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+    .numbers{
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 3.625rem;
+        color: #00FF88;
+    }
+    .numbers-text{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        color: white;
+    }
 }
 
 /* @media screen and (min-width:576px) and (max-width:992px){
