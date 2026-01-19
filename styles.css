@@ -15,25 +15,35 @@
     padding: 0.78125rem 1rem;
     font-size: 1rem;
     font-weight: 600;
-    /* background-color: #469165; */
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     color: white;
     max-width: max-content;
-} 
+}
+.btn-trsp {
+    border-radius: 1000px;
+    border: 2px solid #00FF88;
+    padding: 0.78125rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0);
+    color: #00FF88;
+    max-width: max-content;
+}  
 
 
-/* header styling */
+/* header background styling */
 header{
     background-color: rgba(35, 14, 61, 1);
     background-image: linear-gradient(rgba(247, 233, 63, 1) 100%, rgba(251, 9, 180, 1) 100%, rgba(145, 0, 248, 1) 100%));
 }
+
 /* Nav bar styling */
 nav{
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2%;
+    padding: 1rem 1rem;
 }
 nav .menu{
     display: flex;
@@ -54,6 +64,59 @@ nav .menu a {
     display: none;
 }
 
+/* Hero Section Styling */
+.hero-parent{
+    background-image: url(./assets/hero-bg.png);
+}
+.image-container{
+    /* border: 2px solid red;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images{
+    position: relative;
+}
+.outer-image{
+    /* border: 2px solid red; */
+    padding-top: 6rem; 
+    left: 3.125rem;
+    z-index: 1; 
+}
+.inner-image{
+    /* border: 2px solid red; */
+    top: 3.125rem;
+    right: 11.25rem;
+    z-index: 2;
+    padding-bottom: 0;
+}
+.textbtn-container{
+    /* border: 2px solid red;  */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+.box h2{
+    color: white;
+    font-size: 4.25rem;
+    font-weight: 800;
+    text-align: center;
+}
+.box p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.box-btn{
+    display: flex;
+    gap: 10px;
+}
+
 /* Making responsive for Devices */
 
 @media screen and (max-width:576px){
@@ -69,3 +132,11 @@ nav .menu a {
     }
 
 }
+
+/* @media screen and (min-width:576px) and (max-width:992px){
+    #menu-item{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+} */
