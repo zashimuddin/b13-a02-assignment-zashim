@@ -17,7 +17,11 @@
     font-weight: 600;
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     color: white;
+    cursor: pointer;
     max-width: max-content;
+}
+.btn-gradient:hover{
+    background: linear-gradient(200deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
 }
 .btn-trsp {
     border-radius: 1000px;
@@ -27,8 +31,12 @@
     font-weight: 600;
     background-color: rgba(255, 255, 255, 0);
     color: #00FF88;
+    cursor: pointer;
     max-width: max-content;
 }  
+.btn-trsp:hover{
+    background-color: rgba(255, 255, 255, 0.075);
+}
 
 
 /* header background styling */
@@ -134,7 +142,7 @@ nav .menu a {
     background: rgba(26, 11, 46, 1);;
 }
 .about-child{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     color: white;
     text-align: center;
     padding: 50px 120px 80px;
@@ -155,12 +163,14 @@ nav .menu a {
     margin-bottom: 5rem;
     border: 0.25px solid rgba(9, 26, 71, 0.932);
 }
-.numbers-container{
+.numbers-container-1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
     row-gap: 1rem;
     column-gap: 5rem;
+}
+.numbers-container-2{
+    display: none;
 }
 .numbers{
     font-size: 3rem;
@@ -195,7 +205,6 @@ nav .menu a {
         padding: 0 20px ;
     }
     .about-child{
-        border: 2px solid red;
         color: white;
         text-align: center;
         padding: 40px 19px;
@@ -210,13 +219,21 @@ nav .menu a {
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.25rem;
-        padding-bottom: 5rem;
+        padding-bottom: 2.5rem;
     }
-
-    .numbers-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
+    .about-child hr{
+        margin-bottom: 2.5rem;
+    }
+    .numbers-container-1{
+    display: none;
+    }
+    .numbers-container-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 1rem;
+        column-gap: 5rem;
+    }
     .numbers{
         font-size: 3rem;
         font-weight: 900;
