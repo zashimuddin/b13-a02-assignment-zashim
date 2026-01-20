@@ -626,11 +626,24 @@ nav .menu a {
 
 }
 
-/* @media screen and (min-width:576px) and (max-width:992px){
-    #menu-item{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+@media screen and (min-width:300px) and (max-width:576px){
+    .video{
+        width: 100%;
+        /* margin: 0 auto; */
+        /* margin: 25px 35px 0 35px; */
+        color: white;
+        /* padding: 1.875rem; */
+        border: 2px solid red;
+        border-radius: 2.5rem;
+        background: rgba(53, 17, 101, 0.4);
+}
+ .video iframe{
+        width: 100%;
+        border-top-left-radius: 2.25rem;
+        border-top-right-radius: 2.25rem;
+        padding-bottom: 1.25rem;
+        /* padding-left: 25px; */
+        /* margin: 0 auto; */
     }
-} */
+}
  
