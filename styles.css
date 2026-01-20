@@ -41,7 +41,7 @@
   padding: 10px 20px;
   background-color: black;
   color: white;
-  border-radius: 100000px; /* Slightly smaller than parent for border effect */
+  border-radius: 100000px;
 }
 
 .gradient-border::before{
@@ -501,7 +501,7 @@ nav .menu a {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         row-gap: 1rem;
-        column-gap: 5rem;
+        column-gap: 3rem;
     }
     .numbers{
         font-size: 3rem;
