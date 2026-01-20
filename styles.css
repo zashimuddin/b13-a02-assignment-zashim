@@ -23,6 +23,49 @@
 .btn-gradient:hover{
     background: linear-gradient(200deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
 }
+/* Button border animation started */
+.gradient-border{
+  position: relative; /* Essential for positioning the pseudo-element */
+  padding: 3px; /* The padding around the inner span is where the border appears */
+  background-color: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));;
+  border: none;
+  border-radius: 50px;
+  overflow: hidden; /* Clips the overflowing gradient */
+  cursor: pointer;
+}
+
+.gradient-border span{
+  position: relative;
+  z-index: 1; /* Ensures the button content is above the gradient */
+  display: block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 100000px; /* Slightly smaller than parent for border effect */
+}
+
+.gradient-border::before{
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  /* Use conic-gradient for better rotation effect */
+  background: conic-gradient(from 0deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  animation: glowing 2s linear infinite; /* infinite Animates the background position */
+  z-index: 1;
+}
+
+@keyframes glowing {
+0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* button border animation ended */
 .btn-trsp {
     border-radius: 1000px;
     border: 2px solid #00FF88;
